@@ -1,0 +1,35 @@
+@import"/src/assets/bootstrap/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body{ font-family: 'Poppins', sans-serif;}
+video{
+    height:80vh;
+    margin-left: 5%;
+    width: 90%;
+}
+#capture{
+    border-radius:5px; 
+    width:90%;
+    height:50px;
+    margin-top:50px;
+    color:$secondary-light;
+    background:$primary;
+    display:block;
+}
+#reviewIMG{
+    width:90%;
+    margin-left:5%;
+    margin-top:25px;
+    height:220px;
+    border:1px solid $info2;
+}
+#captureFunctions{
+    width: 90%;
+    height: 11vh;
+    margin-top: 55vh;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+#captureFunctions img{
+    width:30px;
+    height:30px;
+}

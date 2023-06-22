@@ -1,0 +1,55 @@
+@import"/src/assets/bootstrap/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body{ font-family: 'Poppins', sans-serif;}
+.top{
+    width:90%;
+    margin-left:5%;
+}
+h1{
+    font-size: $font-size-large;
+    text-align: center;
+    width:80%;
+    margin-left:10%;
+    margin-top:50px;
+    color:$primary;
+}
+.stepNote,.stepNote,.stepInst, .additionalInfo{
+    font-size: $font-size-normal;
+}
+.stepGuid{
+    font-size:$font-size-large;
+    color:$info;
+    font-weight:600;
+}
+.steps{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    text-align: center;
+    background: $primary;
+    color:$secondary-light;
+}
+.stepBold{
+    font-weight:600;
+    font-size: $font-size-medium;
+    color:$primary;
+    margin-left: 5px;
+}
+.step1,.step2,.step3{
+    font-size: $font-size-normal;
+    display: -webkit-box !important;
+}
+
+.primary-btn{
+    height:50px;
+    border-radius: 5px;
+    background: $primary;
+    width:90%;
+    margin-left:5%;
+    color: $secondary-light;
+    font-weight:600;
+}
+#userSwitch{
+    text-align: center;
+    color:$info;
+}

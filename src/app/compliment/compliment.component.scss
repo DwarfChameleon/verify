@@ -1,0 +1,141 @@
+@import"/src/assets/bootstrap/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body{ font-family: 'Poppins', sans-serif;}
+.iconBox{
+    height:46px;
+    padding:15px;
+    display:flex;
+    margin-top:15px;
+    border: 1px solid $secondary;
+    border-radius: 8px;
+    
+}
+.mainTop{
+    width:90%;
+    margin-left:3%;
+}
+h2{
+font-size:$font-size-xxlarge;
+color:$primary;
+}
+h3{
+    color:$primary;
+}
+.option1{
+    border:1px solid $secondary;
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+    margin-left: 3%;
+    padding: 15px;
+    border-radius: $border-radius-ov;
+}
+.optText{
+    width:auto;
+float:left;
+}
+.optIMG{
+    float: right;
+    left:0;
+}
+.optIMG img{
+    width:50px;
+    height:50px;
+    margin-top: 25px;
+}
+.o-t{
+    font-size: $font-size-xlarge;
+}
+.o-t2{
+    font-size: $font-size-normal;
+}
+.getCamera{
+    border:none;
+    background: transparent;
+}
+.getCamera p{color: $secondary-light;}
+.getCamera img{
+    width: 16px;
+    height: 11px;
+}
+.span1{color:$secondary;}
+.arrow{
+    position:relative;
+    margin-top: 25px;
+    margin-left:25px;
+}
+
+.popup-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+  }
+  
+  .popup-content {
+    background-color:$secondary-light;
+    height:100%;
+    padding: 20px;
+  }
+  
+  .show-popup {
+    height: 100%; /* Adjust the height as needed */
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+    position: absolute;
+  }
+  
+  .popIMG{
+	display:block;
+
+  }
+.popIMG img{
+    width:50px;
+    height:50px;
+}
+
+  .imgTitle{
+    margin-left:20px;
+    margin-top:15px;
+  }
+  .popINST{
+    color:$primary;
+    font-size:$font-size-large;
+    font-weight: 600;
+
+  }
+
+
+  /***modal 2***/
+
+  .modalSuccess {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+    background: $secondary-light;
+    text-align: center;
+    padding-top:25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  #closeModal{
+    width:90%;
+    height:30px;
+    border-radius: 10px;
+    background: $primary;
+    border:none;
+    color:white;
+  }
+  
+ .checkedIMG{
+    width:30px;
+    height:30px
+ }
+  

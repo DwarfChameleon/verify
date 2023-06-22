@@ -1,0 +1,54 @@
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<div class="mainTop">
+<div class="greeting"><h2>{{greetings}} {{user}}</h2></div>
+
+<div><p>{{messages}}</p></div>
+
+<h3>{{requestTitle}}</h3>
+</div>
+
+<div class="option1">
+    <div class="optText"><span class="o-t">{{opt1TitleName}} </span><br><span class="o-t2"> {{opt1Note}}</span>
+        <div class="getCamera" (click)="togglePopup()"><span class="span1">Upload / Add now</span> <span class="arrow"><img src="/assets/arrow.png"></span></div>
+    </div>
+    <div class="optIMG"><img src="/assets/pngwing.png"></div>
+</div>
+<!-----<img [src]="imageData['imageData']">-->
+<br>
+<div class="option1">
+    <div class="optText"><span class="o-t">{{opt1TitleName2}} </span><br><span class="o-t2"> {{opt1Note2}}</span>
+        <div class="getCamera" (click)="togglePopup()"><span class="span1">Upload / Add now</span> <span class="arrow"><img src="/assets/arrow.png"></span></div>
+    </div>
+    <div class="optIMG"><img src="/assets/pay.png"></div>
+</div>
+<br>
+<div class="option1">
+    <div class="optText"><span class="o-t">{{opt1TitleName3}} </span><br><span class="o-t2"> {{opt1Note3}}</span>
+        <div class="getCamera" (click)="togglePopup()"><span class="span1">Upload / Add now</span> <span class="arrow"><img src="/assets/arrow.png"></span></div>
+    </div>
+    <div class="optIMG"><img src="/assets/cartol.png"></div>
+</div>
+
+<div class="popup-container" [ngClass]="{ 'show-popup': showPopup }">
+    <div class="popup-content">
+        <p class="popINST">Choose where to select media</p>
+        <div class="popIMG">
+            <div class="iconBox"><img src="/assets/photo.png" (click)="openFilePicker()"><span class="imgTitle">Photo</span><br>
+                <input #fileInput type="file" accept="image/*" style="display: none" (change)="onFileSelected($event)">
+            </div>
+            <div class="iconBox"><img src="/assets/camera.png" (click)="openCamera()"><span class="imgTitle">Camera</span></div>
+        </div>
+    </div>
+  </div>
+  <div *ngIf="isModalOpen()" class="modalSuccess">
+    <div align="center">
+   <img src="/assets/check.png" id="checkedIMG">
+    </div>
+    
+    
+    <p>Upload Successful</p>
+    <button (click)="closeModal()" id="closeModal">Done</button>
+  </div>
+  
+ 
+  

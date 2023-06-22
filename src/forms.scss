@@ -1,0 +1,59 @@
+@import "/src/assets/bootstrap/variables.scss";
+
+
+label {
+	font-size: $font-size-medium;
+	font-weight: 500 !important;
+	color: $primary;
+	margin-left:10px;
+}
+.inputField{display:flex;}
+input,
+textarea,
+select {
+	font-size: $font-size-xsmall;
+	font-weight: 500 !important;
+	border: 1px solid $secondary !important;
+	padding: 0.6rem;
+	border-radius: 5px;
+	width:93px;
+	height:50px;
+	margin-top:15px;
+	margin-left: 10px;
+}
+input[type='year']{
+	height:48px;
+	padding:0rem;
+}
+input[type='tel']{
+	height:32px;
+	width: 91%;
+}
+
+.form-select {
+	option {
+		padding: 3rem !important;
+	}
+}
+
+input.form-control {
+	// background-color: #f2f2f2ad;
+}
+button.verified {
+	background-color:$primary;
+}
+input.form-control:focus,
+select:focus,
+input.form-control:hover,
+textarea:focus,
+textarea:hover {
+	box-shadow: none;
+	// background-color: rgba(242, 242, 242, 0.678) !important;
+border: 1px solid $info;
+}
+input:focus {outline: none;border-color:$info;box-shadow: 0 0 10px $info; }
+select:focus {outline: none;border-color:$info;box-shadow: 0 0 10px $info; }
+.parag{
+	color:$secondary;
+	margin-left:4px;
+}

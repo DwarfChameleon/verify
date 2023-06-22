@@ -1,0 +1,38 @@
+@font-face {
+    font-family: lyvepulse;
+    src: url("^assets/");
+}
+
+// Override Colors
+$primary: #0b1f44;
+$danger: #F89520;
+$success: #1e1e1e;
+$info: #2b8eeb;
+$warning: #e7e103;
+$secondary: #707070;
+$secondary-light: #EEEEEE;
+$info2:   rgba(135, 207, 235, 0.137);
+$theme-colors: ( "primary": $primary,
+"secondary": $secondary,
+"success": $success,
+"info": $info,
+"info2": $info2,
+"warning": $warning,
+"danger": $danger,
+);
+// Override radiuses
+// $border-radius: 0rem !default;
+$border-radius-ov: 0.3rem;
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius: $border-radius-ov !default;
+$font-size-xxsmall: 9px;
+$font-size-xsmall: 10px;
+$font-size-small: 11x;
+$font-size-normal: 12px;
+$font-size-medium: 14px;
+$font-size-large: 16px;
+$font-size-xlarge: 18px;
+$font-size-xxlarge: 24px;
+$min-content-width: 920px;
+$min-page-width: 1024px;
+$max-content-width: 1300px;

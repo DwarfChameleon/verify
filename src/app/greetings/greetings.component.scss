@@ -1,0 +1,32 @@
+@import"/src/assets/bootstrap/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body{ font-family: 'Poppins', sans-serif;}
+.ItemsList{
+    width:100%;
+    height:auto;
+    
+}
+.mini-item{
+    width:auto;
+    height:60px;
+    margin-top:5px;
+    padding: 5px;
+    background:$secondary;
+    border-bottom: 1px solid $secondary;
+}
+.mini-item img{
+    width:50px;
+    height:50px;
+}
+#pdf{
+    float:left;
+}
+#more{
+    float:right;
+    margin-top:-35px;
+    opacity: 0.5;
+}
+.texRow{padding-top:16px;
+    color:$secondary;
+    font-weight:500;
+}
